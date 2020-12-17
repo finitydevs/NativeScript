@@ -47,7 +47,7 @@ export const placeholderColorProperty = new CssProperty<Style, Color>({
 });
 placeholderColorProperty.register(Style);
 
-const keyboardTypeConverter = makeParser<KeyboardType>(makeValidator<KeyboardType>('datetime', 'phone', 'number', 'url', 'email', 'integer'));
+const keyboardTypeConverter = makeParser<KeyboardType>(makeValidator<KeyboardType>('datetime', 'phone', 'number', 'url', 'email', 'integer', 'text'));
 
 export const keyboardTypeProperty = new Property<EditableTextBase, KeyboardType>({ name: 'keyboardType', valueConverter: keyboardTypeConverter });
 keyboardTypeProperty.register(EditableTextBase);

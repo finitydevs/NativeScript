@@ -255,6 +255,9 @@ export abstract class EditableTextBase extends EditableTextBaseCommon {
 		let newInputType;
 
 		switch (value) {
+			case 'text':
+                newInputType = android.text.InputType.TYPE_CLASS_TEXT | android.text.InputType.TYPE_TEXT_VARIATION_NORMAL;
+                break;
 			case 'datetime':
 				newInputType = android.text.InputType.TYPE_CLASS_DATETIME | android.text.InputType.TYPE_DATETIME_VARIATION_NORMAL;
 				break;

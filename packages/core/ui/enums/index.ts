@@ -1,7 +1,7 @@
 // imported for definition purposes only
 import * as animationModule from '../../ui/animation';
 
-export type KeyboardType = 'datetime' | 'phone' | 'number' | 'url' | 'email' | 'integer';
+export type KeyboardType = 'datetime' | 'phone' | 'number' | 'url' | 'email' | 'integer' | 'text';
 export namespace KeyboardType {
 	export const datetime = 'datetime';
 	export const phone = 'phone';
@@ -9,6 +9,7 @@ export namespace KeyboardType {
 	export const url = 'url';
 	export const email = 'email';
 	export const integer = 'integer';
+	export const text = 'text';
 }
 
 export namespace ReturnKeyType {
